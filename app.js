@@ -27,7 +27,7 @@ function showLoadingState() {
 // Fetch designers from API
 async function fetchDesigners() {
     try {
-        const response = await fetch('http://localhost:5000/api/designers');
+        const response = await fetch('https://backemptycup.onrender.com/api/designers');
         
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
