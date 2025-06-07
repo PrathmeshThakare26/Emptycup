@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmptyCup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <!-- Replace with your actual logo path -->
+                    <img src="/icons/logo.png" alt="EmptyCup Logo" class="logo-image">
+                    <h1 class="logo">Empty<span>Cup</span></h1>
+                </div>
+                <nav class="top-nav">
+                    <a href="#" class="nav-item" data-tooltip="Browse Gallery">
+                        <i class="fas fa-th-large"></i>
+                        <span>Gallery</span>
+                    </a>
+                    <a href="#" class="nav-item" data-tooltip="View Map">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Map</span>
+                    </a>
+                    <a href="#" id="shortlisted-filter" class="nav-item" data-tooltip="Shortlisted Designers">
+                        <i class="far fa-bookmark"></i>
+                        <span>Shortlisted</span>
+                    </a>
+                    <a href="#" class="nav-item sort-btn" data-tooltip="Sort Options">
+                        <i class="fas fa-sort-amount-down"></i>
+                        <span>Sort</span>
+                    </a>
+                </nav>
+            </div>
+        </header>
+        
+        <main class="main-content">
+            <div id="designers-list">
+                <!-- Designers will be loaded here by JavaScript -->
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
